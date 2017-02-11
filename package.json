@@ -1,0 +1,35 @@
+{
+  "name": "wl-common",
+  "version": "1.0.0",
+  "main": "src",
+  "author": "Hanif Ali <hanif@wonderlabs.io>",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "http-status": "^1.0.1",
+    "lodash": "^4.17.3"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.1.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.6.0",
+    "flow-bin": "^0.37.4",
+    "jest": "^18.1.0"
+  },
+  "scripts": {
+    "lint": "eslint src tests",
+    "check": "flow check",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testRegex": "(/tests/unit.*|/tests/integration.*)\\.jsx?$",
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
+    ],
+    "coverageDirectory": "<rootDir>/coverage/",
+    "mocksPattern": "(?:[\\/]|^)tests[\\/]mocks[\\/]"
+  }
+}
