@@ -11,8 +11,5 @@ cache:
     - ".eslintcache"
     - "node_modules"
 
-install:
-  - npm install -g codecov
-
 script:
-  - yarn run test-ci
+  - yarn run test
