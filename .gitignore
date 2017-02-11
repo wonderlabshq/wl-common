@@ -12,6 +12,7 @@ __MACOSX
 *.local.json
 *.local.js
 *.local.yml
+!/tests/files/staging.local.js
 
 /coverage/*
 !/coverage/.gitkeep
