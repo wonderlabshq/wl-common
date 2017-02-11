@@ -10,6 +10,9 @@ cache:
   directories:
     - ".eslintcache"
     - "node_modules"
+install:
+  - yarn global add codecov
 
 script:
-  - yarn run test
+  - yarn run test:coverage
+  - codecov

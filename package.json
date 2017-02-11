@@ -26,6 +26,7 @@
   "jest": {
     "testEnvironment": "node",
     "testRegex": "(/tests/unit.*|/tests/integration.*)\\.jsx?$",
+    "collectCoverage": true,
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}"
     ],
