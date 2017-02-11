@@ -10,10 +10,6 @@ const ServiceNotFoundError = require('./errors').ServiceNotFoundError;
  * @constructor
  */
 class Container {
-  /**
-   * Constructor
-   * @param {Object} config
-   */
   constructor(config = {}) {
     this.cache = {};
     this.config = {
