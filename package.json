@@ -22,7 +22,7 @@
     "check": "flow check",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "test-ci": "jest && codecov"
+    "test-ci": "jest --coverage && codecov"
   },
   "jest": {
     "testEnvironment": "node",
