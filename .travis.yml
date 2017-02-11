@@ -11,7 +11,7 @@ cache:
     - ".eslintcache"
     - "node_modules"
 install:
-  - yarn global add codecov
+  - npm install -g codecov
 
 script:
   - yarn run test:coverage
