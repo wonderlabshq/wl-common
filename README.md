@@ -1,5 +1,7 @@
 # wl-common
 
+[![Build Status](https://travis-ci.org/wonderlabshq/wl-common.svg?branch=develop)](https://travis-ci.org/wonderlabshq/wl-common)
+
 ### Requirements
 - nodejs
 - yarn
