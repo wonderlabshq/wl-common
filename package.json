@@ -1,7 +1,7 @@
 {
   "name": "wl-common",
   "version": "1.0.0",
-  "main": "src",
+  "main": "src/index.js",
   "author": "Hanif Ali <hanif@wonderlabs.io>",
   "license": "UNLICENSED",
   "dependencies": {
