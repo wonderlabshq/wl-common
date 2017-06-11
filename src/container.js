@@ -25,9 +25,8 @@ class Container {
    * @returns {boolean}
    */
   has(name) {
-    const factories = Object.keys(this.config.factory);
-    const prototypes = Object.keys(this.config.prototype);
-    return _.includes(factories, name) || _.includes(prototypes, name);
+    return this.config.factory.hasOwnProperty(name)
+      || this.config.prototype.hasOwnProperty(name);
   }
 
   /**
@@ -93,12 +92,12 @@ class Container {
       return cb ? cb(null, this.cache[name]) : this.cache[name];
     }
 
-    if (_.includes(Object.keys(this.config.factory), name)) {
+    if (this.config.factory.hasOwnProperty(name)) {
       this.cache[name] = this.config.factory[name](this);
       return utils.isFunc(cb) ? cb(null, this.cache[name]) : this.cache[name];
     }
 
-    if (_.includes(Object.keys(this.config.prototype), name)) {
+    if (this.config.prototype.hasOwnProperty(name)) {
       const service = this.config.prototype[name](this);
       return utils.isFunc(cb) ? cb(null, service) : service;
     }
